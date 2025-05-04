@@ -9,7 +9,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 # Dictionary to collect flags
 flags_dict = {}
 
-# flag-41
+#flag 41
 flag_41_element = soup.find("div", class_="text-center my-4")
 if flag_41_element and "flag-41" in flag_41_element.text:
     flags_dict["flag-41"] = "flag-41"
